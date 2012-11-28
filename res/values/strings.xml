@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SIA</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="NombreUsuarioStr">Nombre de Usuario</string>
+    <string name="IngresarStr">Ingresar</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="ConsultarInventarioStr">Consultar Inventario</string>
+    <string name="title_activity_consultar_inventario">ConsultarInventarioActivity</string>
+    <string-array name="listaProductos"></string-array>
+
+</resources>
