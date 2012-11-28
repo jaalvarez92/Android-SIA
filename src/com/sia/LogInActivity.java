@@ -17,11 +17,8 @@ public class LogInActivity extends Activity implements OnClickListener
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
         
-<<<<<<< HEAD
         retornarButton(R.id.btnIngresar).setOnClickListener(this);
-=======
         retornarButton(R.id.btnIngresar).setOnClickListener((OnClickListener) this);
->>>>>>> 450c5dafcc03aa6aadb1e5b3903988cb3339421a
     }
     private Button retornarButton(int pIdButton)
 	{

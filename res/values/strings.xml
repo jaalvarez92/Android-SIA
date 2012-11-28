@@ -9,7 +9,6 @@
     <string name="title_activity_menu">MenuActivity</string>
     <string name="ConsultarInventarioStr">Consultar Inventario</string>
     <string name="title_activity_consultar_inventario">ConsultarInventarioActivity</string>
-<<<<<<< HEAD
 
     <string-array name="listaProductos"></string-array>
 
@@ -35,8 +34,6 @@
     <string name="gfgfgf">Limite Credito:</string>
     <string name="qwer">Saldo:</string>
 
-=======
     <string-array name="listaProductos"></string-array>
 
->>>>>>> 450c5dafcc03aa6aadb1e5b3903988cb3339421a
 </resources>
