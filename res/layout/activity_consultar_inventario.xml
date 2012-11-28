@@ -58,6 +58,7 @@
         android:text="Medium Text"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
+<<<<<<< HEAD
     <ImageView
         android:id="@+id/imageViewArticulo"
         android:layout_width="wrap_content"
@@ -68,4 +69,6 @@
         android:layout_toRightOf="@+id/Transito"
         android:src="@drawable/ic_launcher" />
 
+=======
+>>>>>>> 450c5dafcc03aa6aadb1e5b3903988cb3339421a
 </RelativeLayout>

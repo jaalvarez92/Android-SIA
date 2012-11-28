@@ -1,5 +1,10 @@
 package com.sia;
 
+<<<<<<< HEAD
+=======
+import java.util.ArrayList;
+
+>>>>>>> 450c5dafcc03aa6aadb1e5b3903988cb3339421a
 import com.controlador.RestAccess;
 import com.entity.Articulo;
 
@@ -19,9 +24,13 @@ public class MenuActivity extends Activity implements OnClickListener
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_menu);
+<<<<<<< HEAD
 		retornarButton(R.id.btnConsultarInventario).setOnClickListener(this);
 		retornarButton(R.id.btnColocarPedidos).setOnClickListener(this);
 		retornarButton(R.id.btnConsultas).setOnClickListener(this);
+=======
+		retornarButton(R.id.btnConsultarInventario).setOnClickListener((OnClickListener) this);
+>>>>>>> 450c5dafcc03aa6aadb1e5b3903988cb3339421a
 	}
 	
 	private Button retornarButton(int pIdButton)
@@ -44,6 +53,7 @@ public class MenuActivity extends Activity implements OnClickListener
 		{
 			case R.id.btnConsultarInventario:				
 				RestAccess rAccess = RestAccess.getInstance();				
+<<<<<<< HEAD
 				Articulo[] arts = rAccess.getArticulos2();
 				
 				if(arts != null)
@@ -73,6 +83,29 @@ public class MenuActivity extends Activity implements OnClickListener
 				//i = new Intent(this, ConsultarInventarioActivity.class);
 				//startActivityForResult(i, 0);		
 				//break;
+=======
+				Articulo arts = rAccess.getArticulos();
+				System.out.println("ME CAGO EN TENCHAA");
+				
+				if(arts != null)
+				{
+					String[] nombresArt = new String[arts.listaArticulos.size()];
+									
+					for(int x = 0; x < arts.listaArticulos.size(); x++)
+					{
+						nombresArt[x] = arts.listaArticulos.get(x).Nombre;
+						System.out.println("Articulo " + x + ": " + arts.listaArticulos.get(x).Nombre);
+					}
+					
+					i = new Intent(this, ConsultarInventarioActivity.class);
+					i.putExtra("listaArticulos", nombresArt);
+					startActivityForResult(i, 0);					
+					//startActivityForResult(i, R.id.menuprincipal_imgBtnEncuesta);
+				}
+				else
+					System.out.println("ME CAGO EN TENCHAA NULLL");
+				break;
+>>>>>>> 450c5dafcc03aa6aadb1e5b3903988cb3339421a
 			default:
 				break;
 		}		

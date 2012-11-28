@@ -30,6 +30,7 @@
             android:name="com.sia.ConsultarInventarioActivity"
             android:label="@string/title_activity_consultar_inventario" >
         </activity>
+<<<<<<< HEAD
         <activity
             android:name="com.sia.ColocarPedidosActivity"
             android:label="@string/title_activity_colocar_pedidos" >
@@ -42,4 +43,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+=======
+    </application>
+
+>>>>>>> 450c5dafcc03aa6aadb1e5b3903988cb3339421a
 </manifest>

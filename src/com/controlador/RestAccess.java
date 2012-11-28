@@ -1,5 +1,6 @@
 package com.controlador;
 
+<<<<<<< HEAD
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutput;
@@ -8,14 +9,22 @@ import java.net.URI;
 import java.util.List;
 
 import org.apache.http.HttpEntity;
+=======
+import java.util.ArrayList;
+import java.util.List;
+
+>>>>>>> 450c5dafcc03aa6aadb1e5b3903988cb3339421a
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.DefaultHttpClient;
+<<<<<<< HEAD
 import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
+=======
+>>>>>>> 450c5dafcc03aa6aadb1e5b3903988cb3339421a
 import org.apache.http.util.EntityUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -24,9 +33,12 @@ import com.google.gson.*;
 import com.entity.Articulo;
 import com.entity.RestObject;
 
+<<<<<<< HEAD
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
+=======
+>>>>>>> 450c5dafcc03aa6aadb1e5b3903988cb3339421a
 public class RestAccess
 {
 	
@@ -38,6 +50,7 @@ public class RestAccess
 			ref = new RestAccess();		
 		return ref;
 	}
+<<<<<<< HEAD
 	
 	
 	public String[] getArticulos()
@@ -45,11 +58,18 @@ public class RestAccess
 			
 		HttpClient httpClient = new DefaultHttpClient();				
 		HttpGet del = new HttpGet(url + "obtenerArticulos2"); 
+=======
+	public Articulo getArticulos()
+	{		
+		HttpClient httpClient = new DefaultHttpClient();				
+		HttpGet del = new HttpGet(url + "obtenerArticulos");		
+>>>>>>> 450c5dafcc03aa6aadb1e5b3903988cb3339421a
 		del.setHeader("Content-type","application/json");	
 		Articulo respuesta = new Articulo();
 	
 		try
 		{
+<<<<<<< HEAD
 		        HttpResponse resp = httpClient.execute(del);	
 		        String respStr = EntityUtils.toString(resp.getEntity());
 		        System.out.println("-->>>> "+ respStr);
@@ -174,11 +194,37 @@ public class RestAccess
 		           respuesta.cantComprometida = obj.getDouble("Comprometido");
 		           //respuesta.Imagen =  getArreglo(obj.get("Foto"));
 		        }
+=======
+		        HttpResponse resp = httpClient.execute(del);		      
+		        String respStr = EntityUtils.toString(resp.getEntity());
+		        //respStr = "{'Codigo':'120','Comentario':'Hechos en china','Comprometido':0,'Costo':0.0000,'Descripcion':'Lápices Mongol','Disponible':0,'Foto':null,'IdArticulo':1,'IdBodega':1,'IdEmpresa':0,'Precio':0.0000,'Solicitado':0,'Stock':19,'UnidadMedida':'unidades'}";
+		        System.out.println("-->>>> "+ respStr);
+		        JSONArray respJSON = new JSONArray(respStr);
+		        
+		        //String[] articulos = new String[respJSON.length()];
+		 		        
+		        for(int i=0; i<respJSON.length(); i++)
+		        {
+		        	System.out.println("III");
+		        	JSONObject obj = respJSON.getJSONObject(i);
+		        	Articulo nuevoArt = new Articulo();
+		            
+		            nuevoArt.Nombre = obj.getString("Descripcion");
+		            //nuevoArt.cantStock = obj.getDouble("");
+		           // nuevoArt.CantDisponible = obj.getDouble("");
+		            nuevoArt.cantComprometida = obj.getDouble("Comprometido");
+		           //nuevoArt.cantTransito = obj.getDouble("");
+		            
+		            respuesta.listaArticulos.add(nuevoArt);	            		        			 		         
+		        }
+		        System.out.println("j");
+>>>>>>> 450c5dafcc03aa6aadb1e5b3903988cb3339421a
 		        return respuesta;
 		}
 		catch(Exception ex)
 		{			
 		    System.out.println(ex.getMessage());
+<<<<<<< HEAD
 		    return new Articulo();
 		}
 		
@@ -206,6 +252,12 @@ public class RestAccess
 	}
 	
 	
+=======
+		    return null;
+		}
+	}
+	
+>>>>>>> 450c5dafcc03aa6aadb1e5b3903988cb3339421a
 	public String getData(String pMethod, String pId)
 	{
 		HttpClient httpClient = new DefaultHttpClient();
@@ -308,7 +360,11 @@ public class RestAccess
 	}
 	
 	
+<<<<<<< HEAD
 	String url = "http://10.0.2.2:1797/RestService.svc/";  
+=======
+	String url = "http://10.0.2.2/RestService/RestService.svc/";  
+>>>>>>> 450c5dafcc03aa6aadb1e5b3903988cb3339421a
 	private static RestAccess ref;
 
 }

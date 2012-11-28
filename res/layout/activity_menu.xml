@@ -13,6 +13,7 @@
         android:layout_marginTop="102dp"
         android:text="@string/ConsultarInventarioStr" />
 
+<<<<<<< HEAD
     <Button
         android:id="@+id/btnColocarPedidos"
         android:layout_width="wrap_content"
@@ -31,4 +32,6 @@
         android:layout_below="@+id/btnColocarPedidos"
         android:text="@string/ConsultasStr" />
 
+=======
+>>>>>>> 450c5dafcc03aa6aadb1e5b3903988cb3339421a
 </RelativeLayout>
