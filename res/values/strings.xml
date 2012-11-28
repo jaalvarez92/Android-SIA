@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SIA</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="NombreUsuarioStr">Nombre de Usuario</string>
+    <string name="IngresarStr">Ingresar</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="ConsultarInventarioStr">Consultar Inventario</string>
+    <string name="title_activity_consultar_inventario">ConsultarInventarioActivity</string>
+
+    <string-array name="listaProductos"></string-array>
+
+    <string name="ConsultasStr">Consultas</string>
+    <string name="ColocarPedidosStr">Colocar Pedidos</string>
+    <string name="title_activity_colocar_pedidos">ColocarPedidosActivity</string>
+    <string name="PrecioStr">Precio</string>
+    <string name="CantStr">Cantidad</string>
+    <string name="AgregarStr">Agregar</string>
+    <string name="TerminarStr">Terminar Pedido</string>
+    <string name="title_activity_consultar">ConsultarActivity</string>
+    <string name="CantidadStrr">Cantidad vendida:</string>
+    <string name="PrecioStrr">Precio:</string>
+    <string name="Detalles">Detalles del cliente:</string>
+    <string name="CStr">Cantidad vendida:</string>
+    <string name="ss">Ultimos 12 meses:</string>
+    <string name="dg">Promedio de ventas por factura:</string>
+    <string name="sdg">Stock:</string>
+    <string name="COmstr">Comprometido:</string>
+    <string name="xsdgsd">Disponible:</string>
+    <string name="dsgdf">En tránsito</string>
+    <string name="ffffff">En transito:</string>
+    <string name="gfgfgf">Limite Credito:</string>
+    <string name="qwer">Saldo:</string>
+
+</resources>
